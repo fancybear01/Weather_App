@@ -5,20 +5,19 @@ import android.util.Log
 import androidx.compose.foundation.clickable
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.weatherapp.R
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.AlertDialog
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Tab
 import androidx.compose.material.TabRow
-import androidx.compose.material.TextField
+import androidx.compose.material3.TextField
 import androidx.compose.material3.TabRowDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -43,7 +42,6 @@ import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.pagerTabIndicatorOffset
 import com.google.accompanist.pager.rememberPagerState
 import kotlinx.coroutines.launch
-import okhttp3.Request
 import org.json.JSONArray
 import org.json.JSONObject
 import kotlin.math.roundToInt
@@ -84,7 +82,7 @@ fun MainCard(
                     Text(
                         modifier = Modifier.padding(top = 8.dp, start = 8.dp),
                         text = currentDay.value.time,
-                        style = androidx.compose.ui.text.TextStyle(fontSize = 20.sp),
+                        style = TextStyle(fontSize = 20.sp),
                         color = Color.White
                     )
 
